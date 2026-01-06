@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ title }}</h1>
+    <hr>
+    <div class="card">
+        <div class="card-header bg-success text-light">
+            <h4>เพิ่มข้อมูลรถยนค์คันใหม่</h4>
+        </div>
+        <div class="card-body">
+            <form method="post">
+        <div class="mb-3">
+            <label for="Brand" class="form-label">Brand</label>
+            <input name ="brand" type="text" class="form-control" id="Brand" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="Model" class="form-label">Model</label>
+            <input name ="Model" type="text" class="form-control" id="Model" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="Year" class="form-label">Year</label>
+            <input name ="Year" type="number" class="form-control" id="Year" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="Price" class="form-label">Price</label>
+            <input name ="Price" type="number" class="form-control" id="Price" aria-describedby="emailHelp">
+
+        </div>
+
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-car-front-fill"></i> Submit</button>
+            </form>
+        
+    </div>
+</div>
+{% endblock %}
